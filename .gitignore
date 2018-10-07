@@ -1,5 +1,6 @@
 # large files and backups
 data/
+jsons_byid/
 flaskwebsite/flasktravel/data/
 .DS_Store
 
