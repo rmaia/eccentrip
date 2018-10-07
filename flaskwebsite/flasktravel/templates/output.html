@@ -1,0 +1,51 @@
+{% extends "template.html" %}
+{% block content %}
+
+<div class="section no-pad-bot" id="index-banner">
+<div class="container">
+  <h4 class="header center grey-text text-darken-3">Recommendations based on<br> "{{' '.join(usr_t)}}"</h4>
+  {% if f_dist != '' and f_loc != '' %}
+      <h5 class="header center grey-text text-darken-1">Filtering to {{f_dist}} miles from {{f_loc}}</h5>
+  {% endif %}
+
+<center class="z-depth-2">
+{% include "map-output-clean.html" without context %}
+</center>
+
+<br>
+
+<div class="row">
+
+{% for index,row in outtable.iterrows()%}
+    <div class="col m6">
+      <div class="card small hoverable">
+
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src={{row['imgurl']}}>
+        </div>
+
+        <div class="card-content">
+          <span class="card-title activator teal-text text-darken-2">{{row['title']}}<i class="material-icons grey-text text-darken-4 right">more_vert</i></span>
+        </div>
+
+        <div class="card-reveal">
+          <span class="card-title teal-text text-darken-2">{{row['title']}}<i class="material-icons grey-text text-darken-4 right">close</i></span>
+          <p class="deep-purple-text"><b>Keywords: {{row['keywords']}}</b>  </p>
+          <p>{{row['description']}}</p>
+          <p><a href={{row['url']}} target='blank'>view more about {{row['title']}} at atlasobscura.com</a></p>
+        </div>
+      </div>
+    </div>
+{% endfor %}
+
+</div>
+
+</div>
+
+</div>
+
+{% endblock %}
+
+
+
+

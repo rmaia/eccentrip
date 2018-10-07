@@ -1,0 +1,83 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+ html {
+    font-family: 'Noto Sans', 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+.card .card-title {
+  font-family: 'Open Sans';
+  font-size: 22px;
+  font-weight: 300;
+}
+
+.card .card-reveal {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
+
+.bannerimage {
+  width: 100%;
+  background-image: url(http://s30.postimg.org/x0ne0p5wx/bootsrap.png);
+  height: 405px;
+  background-color: purple;
+  background-position: center;
+}
+
+.hero-image {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0.65)), url("https://assets.atlasobscura.com/media/W1siZiIsInVwbG9hZHMvcGxhY2VfaW1hZ2VzL2VjNzgwZjFiLTM0MjItNGFhZC1iYmRhLWExNjEyZmJiNGFmMjA2OGUwOTMyMTEyZDhkYmY5Yl9iZWxsaGF2ZW4uanBnIl0sWyJwIiwidGh1bWIiLCIxMjAweD4iXSxbInAiLCJjb252ZXJ0IiwiLXF1YWxpdHkgODEgLWF1dG8tb3JpZW50Il1d/bellhaven.jpg");
+  background-color: #cccccc;
+  height: 650px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+/* Text Inputs + Textarea
+   ========================================================================== */
+/* Style Placeholders */
+::-webkit-input-placeholder {
+  color: #00796b;
+}
+::-moz-placeholder {
+  color: #00796b;
+}
+:-ms-input-placeholder {
+  color: #00796b;
+}
+::-ms-input-placeholder {
+  color: #00796b;
+}
+::placeholder {
+  color: #00796b;
+}

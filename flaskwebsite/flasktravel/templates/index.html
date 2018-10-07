@@ -1,0 +1,42 @@
+{% extends "template.html" %}
+{% block content %}
+
+<div class="hero-image">
+  <div class="hero-text">
+    <div class="col s12">
+    <h1 class="header center teal-text text-darken-2">Eccentrip</h1>
+    <h5 class="header center s12 deep-purple-text text-darken-2">Leave the beaten path behind</h5>
+    <br>
+      <form action='output' method='POST' class='col12 grey-text text-darken-3'>
+      <input name='usrtext' placeholder='What would you like to see today?' type='text' class='validate teal-text text-darken-3' >
+        <div class="col s12">
+        Filter search:
+          <div class="input-field inline" >
+          <input name="usrdist" type="number" class="validate teal-text text-darken-3">
+          <label for="usrdist" class="teal-text text-darken-3">Distance</label>
+          </div>
+        miles from
+          <div class="input-field inline">
+          <input name="usrloc" type="text" class="validate teal-text text-darken-1">
+          <label for="usrloc" class="teal-text text-darken-3">Location</label>
+          </div>
+        </div>
+
+        <div class="row center">
+        <button type="submit" class="btn btn-large waves-effect waves-light teal"><i class="material-icons md-24 right">public</i>Let's go!</button>
+        </div>
+      </form>
+      <div class='row center'>
+      <br><br>
+      <a href="slides" target='blank' class="waves-effect waves-light btn-small deep-purple">Demo slides</a>
+      <br><br>
+      <a href="http://www.atlasobscura.com" target='blank' class="waves-effect waves-light btn-small deep-purple">About Atlas Obscura</a>
+      <br><br>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+{% endblock %}

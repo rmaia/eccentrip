@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS=false; L_NO_TOUCH=false; L_DISABLE_3D=false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.css"/>
+    
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+    <style>#map_c13d2757a9914de7bed26cb11d50da69 {
+        position: relative;
+        width: 1000.0px;
+        height: 500.0px;
+        left: 0.0%;
+        top: 0.0%;
+        }
+    </style>
+</head>
+<body>    
+    
+    <div class="folium-map" id="map_c13d2757a9914de7bed26cb11d50da69" ></div>
+</body>
+<script>    
+    
+    
+        var bounds = null;
+    
+
+    var map_c13d2757a9914de7bed26cb11d50da69 = L.map(
+        'map_c13d2757a9914de7bed26cb11d50da69', {
+        center: [36.362806500000005, -119.47829225000001],
+        zoom: 2,
+        maxBounds: bounds,
+        layers: [],
+        worldCopyJump: false,
+        crs: L.CRS.EPSG3857,
+        zoomControl: true,
+        });
+
+    
+    
+    var tile_layer_c2ad10257e1b431b8aa836640cddc0e0 = L.tileLayer(
+        'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+        {
+        "attribution": null,
+        "detectRetina": false,
+        "maxNativeZoom": 18,
+        "maxZoom": 18,
+        "minZoom": 0,
+        "noWrap": false,
+        "subdomains": "abc"
+}).addTo(map_c13d2757a9914de7bed26cb11d50da69);
+    
+        var marker_e9935a32003c46c3bddf2b84e466ffd3 = L.marker(
+            [34.150127, -117.854375],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_c13d2757a9914de7bed26cb11d50da69);
+        
+    
+
+                var icon_e0dae81e8ef545f2a6ac91b3a841c033 = L.AwesomeMarkers.icon({
+                    icon: 'circle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_e9935a32003c46c3bddf2b84e466ffd3.setIcon(icon_e0dae81e8ef545f2a6ac91b3a841c033);
+            
+    
+            var popup_4e5803d8309e47ae8b95de164e08e80b = L.popup({maxWidth: '2650'
+            
+            });
+
+            
+                var i_frame_243b28e5fe884bd68fc7fd098c3bae70 = $('<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Y2VudGVyPjxoMj5SdWJlbCBDYXN0bGU8L2gyPgogICAgICAgICAgPGg0PkEgZ2lhbnQgY2FzdGxlIG9mIGp1bmsuPC9oND4KICAgICAgICAgIDxpbWcgc3JjPSJodHRwczovL2Fzc2V0cy5hdGxhc29ic2N1cmEuY29tL21lZGlhL1cxc2laaUlzSW5Wd2JHOWhaSE12Y0d4aFkyVmZhVzFoWjJWekwzSjFZbVZzTVM1cWNHY2lYU3hiSW5BaUxDSjBhSFZ0WWlJc0lqRXlNREI0UGlKZExGc2ljQ0lzSW1OdmJuWmxjblFpTENJdGNYVmhiR2wwZVNBNE1TQXRZWFYwYnkxdmNtbGxiblFpWFYwL3J1YmVsMS5qcGciIGNsYXNzPSJjZW50ZXIiIGhlaWdodD0iMjAwIj4KICAgICAgICAgIDxicj5rZXl3b3JkczogYXJjaGl0ZWN0dXJhbCBvZGRpdGllcywgZWNjZW50cmljIGhvbWVzLCBvdXRzaWRlciBhcmNoaXRlY3R1cmUKICAgICAgICAgIDxicj5PZGRpdHkgc2NvcmU6IDgwLjkxJQogICAgICAgICAgPC9jZW50ZXI+" width="300" style="border:none !important;" height="300"></iframe>')[0];
+                popup_4e5803d8309e47ae8b95de164e08e80b.setContent(i_frame_243b28e5fe884bd68fc7fd098c3bae70);
+            
+
+            marker_e9935a32003c46c3bddf2b84e466ffd3.bindPopup(popup_4e5803d8309e47ae8b95de164e08e80b)
+            ;
+
+            
+        
+    
+        marker_e9935a32003c46c3bddf2b84e466ffd3.bindTooltip(
+            '<div>'
+            + 'Rubel Castle' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_71b274354ed74c6198f28ee55a43cca1 = L.marker(
+            [34.127238, -118.164289],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_c13d2757a9914de7bed26cb11d50da69);
+        
+    
+
+                var icon_aebfd094419b46318fc986c0c6c35be4 = L.AwesomeMarkers.icon({
+                    icon: 'circle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_71b274354ed74c6198f28ee55a43cca1.setIcon(icon_aebfd094419b46318fc986c0c6c35be4);
+            
+    
+            var popup_f03b0413eaef4090a6ae2cc2d448ed90 = L.popup({maxWidth: '2650'
+            
+            });
+
+            
+                var i_frame_0e1c35dfd26d4c62a1bd431fad11cddd = $('<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Y2VudGVyPjxoMj5QYXNhZGVuYXMgQnVzY2ggR2FyZGVucyA8L2gyPgogICAgICAgICAgPGg0PlNvdXRoZXJuIENhbGlmb3JuaWHigJlzIFRoZW1lIFBhcmsgQmVnaW5uaW5ncy48L2g0PgogICAgICAgICAgPGltZyBzcmM9Imh0dHBzOi8vYXNzZXRzLmF0bGFzb2JzY3VyYS5jb20vbWVkaWEvVzFzaVppSXNJblZ3Ykc5aFpITXZjR3hoWTJWZmFXMWhaMlZ6THpVeU1HVTNNV1UwTFdVMVpUZ3ROR1l4WkMwNVpUaGlMVEkwTVdRd1l6ZzJZemxrT0RFellXWTVOakV5WkRZMFpqUTVNR05rT0Y5R01rVkdNVGd3TWkxRk1rTkRMVFF6TlVNdFFqRkVNaTFHTTBZM05VVkdSRU0wTlVJdWFuQmxaeUpkTEZzaWNDSXNJblJvZFcxaUlpd2lNVEl3TUhnLUlsMHNXeUp3SWl3aVkyOXVkbVZ5ZENJc0lpMXhkV0ZzYVhSNUlEZ3hJQzFoZFhSdkxXOXlhV1Z1ZENKZFhRL0YyRUYxODAyLUUyQ0MtNDM1Qy1CMUQyLUYzRjc1RUZEQzQ1Qi5qcGVnIiBjbGFzcz0iY2VudGVyIiBoZWlnaHQ9IjIwMCI+CiAgICAgICAgICA8YnI+a2V5d29yZHM6IGFtdXNlbWVudCBwYXJrcywgY29tbWVyY2lhbCBjdXJpb3NpdGllcwogICAgICAgICAgPGJyPk9kZGl0eSBzY29yZTogMjMuMDIlCiAgICAgICAgICA8L2NlbnRlcj4=" width="300" style="border:none !important;" height="300"></iframe>')[0];
+                popup_f03b0413eaef4090a6ae2cc2d448ed90.setContent(i_frame_0e1c35dfd26d4c62a1bd431fad11cddd);
+            
+
+            marker_71b274354ed74c6198f28ee55a43cca1.bindPopup(popup_f03b0413eaef4090a6ae2cc2d448ed90)
+            ;
+
+            
+        
+    
+        marker_71b274354ed74c6198f28ee55a43cca1.bindTooltip(
+            '<div>'
+            + 'Pasadenas Busch Gardens ' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_ec766dab2ce442d8a3d7cc22075a4ed5 = L.marker(
+            [34.10576, -118.342093],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_c13d2757a9914de7bed26cb11d50da69);
+        
+    
+
+                var icon_cd3989585575457485e0bab6dc37c021 = L.AwesomeMarkers.icon({
+                    icon: 'circle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_ec766dab2ce442d8a3d7cc22075a4ed5.setIcon(icon_cd3989585575457485e0bab6dc37c021);
+            
+    
+            var popup_625dd82fbaff4b6db76eed95ad7d254c = L.popup({maxWidth: '2650'
+            
+            });
+
+            
+                var i_frame_68b75ec67569456eb07f2be7a74b70ac = $('<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Y2VudGVyPjxoMj5NaW5pYXR1cmUgR2FyZGVuIG9mIFdoaW1zeSA8L2gyPgogICAgICAgICAgPGg0PkFuIHF1aXJreSBjb2xsZWN0aW9uIG9mIGZpZ3VyaW5lcyBiYWNrZHJvcHBlZCBieSBjaXR5IHZpZXdzIGlzIGhpZGRlbiBuZXh0IHRvIGEgcG9wdWxhciByZXN0YXVyYW50IGluIHRoZSBIb2xseXdvb2QgaGlsbHMuPC9oND4KICAgICAgICAgIDxpbWcgc3JjPSJodHRwczovL2Fzc2V0cy5hdGxhc29ic2N1cmEuY29tL21lZGlhL1cxc2laaUlzSW5Wd2JHOWhaSE12Y0d4aFkyVmZhVzFoWjJWekwyMXVNSE5rZVhaME1tZG1PVE5pWmpJMVpqRmxZamhsWkdRM01qQmxYMFoxYkd4VGFYcGxVbVZ1WkdWeUxUSXVhbkJuSWwwc1d5SndJaXdpZEdoMWJXSWlMQ0l4TWpBd2VENGlYU3hiSW5BaUxDSmpiMjUyWlhKMElpd2lMWEYxWVd4cGRIa2dPREVnTFdGMWRHOHRiM0pwWlc1MElsMWQvRnVsbFNpemVSZW5kZXItMi5qcGciIGNsYXNzPSJjZW50ZXIiIGhlaWdodD0iMjAwIj4KICAgICAgICAgIDxicj5rZXl3b3Jkczogb3V0c2lkZXIgYXJ0LCBtaW5pYXR1cmVzLCBnYXJkZW5zCiAgICAgICAgICA8YnI+T2RkaXR5IHNjb3JlOiA5Ny4yMiUKICAgICAgICAgIDwvY2VudGVyPg==" width="300" style="border:none !important;" height="300"></iframe>')[0];
+                popup_625dd82fbaff4b6db76eed95ad7d254c.setContent(i_frame_68b75ec67569456eb07f2be7a74b70ac);
+            
+
+            marker_ec766dab2ce442d8a3d7cc22075a4ed5.bindPopup(popup_625dd82fbaff4b6db76eed95ad7d254c)
+            ;
+
+            
+        
+    
+        marker_ec766dab2ce442d8a3d7cc22075a4ed5.bindTooltip(
+            '<div>'
+            + 'Miniature Garden of Whimsy ' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_888828333bfe4c908b188d6ab6f2ebc6 = L.marker(
+            [33.841509, -117.961854],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_c13d2757a9914de7bed26cb11d50da69);
+        
+    
+
+                var icon_74e058d8de5541f0929a303aa1c86543 = L.AwesomeMarkers.icon({
+                    icon: 'circle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_888828333bfe4c908b188d6ab6f2ebc6.setIcon(icon_74e058d8de5541f0929a303aa1c86543);
+            
+    
+            var popup_0fddff4c93514f2a990ed34989a54742 = L.popup({maxWidth: '2650'
+            
+            });
+
+            
+                var i_frame_6a9451261d6b4691b90067a294882321 = $('<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Y2VudGVyPjxoMj5Ccm9va2h1cnN0IENvbW11bml0eSBQYXJrPC9oMj4KICAgICAgICAgIDxoND5BIHN1cnJlYWwsIEdhdWRpLWluc3BpcmVkIHBsYXkgc3BhY2UgbmVhciBhbiBBbmFoZWltIGNvbW11bml0eSBjZW50ZXIuPC9oND4KICAgICAgICAgIDxpbWcgc3JjPSJodHRwczovL2Fzc2V0cy5hdGxhc29ic2N1cmEuY29tL21lZGlhL1cxc2laaUlzSW5Wd2JHOWhaSE12Y0d4aFkyVmZhVzFoWjJWekx6RmxaV0U0T1RFNExUZGpPVGN0TkRVek5DMDRZV1poTFRNd1lUSmpObU00TjJOa1pHRmhObVE0WXpoak9EbGpNREE1TW1NME1WODJRVVpDTUVKQlJTMDVRVVpDTFRRMFFUY3RPVU5CUVMwME56QXdRVEZCUlVVek5rVXVhbkJsWnlKZExGc2ljQ0lzSW5Sb2RXMWlJaXdpTVRJd01IZy1JbDBzV3lKd0lpd2lZMjl1ZG1WeWRDSXNJaTF4ZFdGc2FYUjVJRGd4SUMxaGRYUnZMVzl5YVdWdWRDSmRYUS82QUZCMEJBRS05QUZCLTQ0QTctOUNBQS00NzAwQTFBRUUzNkUuanBlZyIgY2xhc3M9ImNlbnRlciIgaGVpZ2h0PSIyMDAiPgogICAgICAgICAgPGJyPmtleXdvcmRzOiBwbGF5Z3JvdW5kcywgcGFya3MKICAgICAgICAgIDxicj5PZGRpdHkgc2NvcmU6IDk3LjE1JQogICAgICAgICAgPC9jZW50ZXI+" width="300" style="border:none !important;" height="300"></iframe>')[0];
+                popup_0fddff4c93514f2a990ed34989a54742.setContent(i_frame_6a9451261d6b4691b90067a294882321);
+            
+
+            marker_888828333bfe4c908b188d6ab6f2ebc6.bindPopup(popup_0fddff4c93514f2a990ed34989a54742)
+            ;
+
+            
+        
+    
+        marker_888828333bfe4c908b188d6ab6f2ebc6.bindTooltip(
+            '<div>'
+            + 'Brookhurst Community Park' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_29d367b1a15c4065a9b959d4cae73033 = L.marker(
+            [38.552965, -121.485999],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_c13d2757a9914de7bed26cb11d50da69);
+        
+    
+
+                var icon_c0d8942c86594389b8d1f21f1667e433 = L.AwesomeMarkers.icon({
+                    icon: 'circle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_29d367b1a15c4065a9b959d4cae73033.setIcon(icon_c0d8942c86594389b8d1f21f1667e433);
+            
+    
+            var popup_a9e545f126aa4dc48a10971432ba5beb = L.popup({maxWidth: '2650'
+            
+            });
+
+            
+                var i_frame_d7515055ef4044d898f8d6219431f18b = $('<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Y2VudGVyPjxoMj5EcmFnb24gSG91c2UgPC9oMj4KICAgICAgICAgIDxoND5BbiBlY2NlbnRyaWMgaG9tZSBzdGFuZHMgb3V0IGluIGFuIG90aGVyd2lzZSBhdmVyYWdlIG5laWdoYm9yaG9vZCB3aXRoIG1vc2FpY3MsIG1pbmkgdG9waWFyaWVzLCBhbmQga2luZXRpYyBzY3VscHR1cmUuPC9oND4KICAgICAgICAgIDxpbWcgc3JjPSJodHRwczovL2Fzc2V0cy5hdGxhc29ic2N1cmEuY29tL21lZGlhL1cxc2laaUlzSW5Wd2JHOWhaSE12Y0d4aFkyVmZhVzFoWjJWekx6Wm1OREEwTVdJM1kyVXpNR1EwTXpFMk9HSm1ZemhoTmpabVpqZGxORE5rTXpKbE1HUXhaV1F1YW5CbklsMHNXeUp3SWl3aWRHaDFiV0lpTENJeE1qQXdlRDRpWFN4YkluQWlMQ0pqYjI1MlpYSjBJaXdpTFhGMVlXeHBkSGtnT0RFZ0xXRjFkRzh0YjNKcFpXNTBJbDFkLzZmNDA0MWI3Y2UzMGQ0MzE2OGJmYzhhNjZmZjdlNDNkMzJlMGQxZWQuanBnIiBjbGFzcz0iY2VudGVyIiBoZWlnaHQ9IjIwMCI+CiAgICAgICAgICA8YnI+a2V5d29yZHM6IGFyY2hpdGVjdHVyYWwgb2RkaXRpZXMsIGVjY2VudHJpYyBob21lcywgb3V0c2lkZXIgYXJjaGl0ZWN0dXJlCiAgICAgICAgICA8YnI+T2RkaXR5IHNjb3JlOiAzOS43JQogICAgICAgICAgPC9jZW50ZXI+" width="300" style="border:none !important;" height="300"></iframe>')[0];
+                popup_a9e545f126aa4dc48a10971432ba5beb.setContent(i_frame_d7515055ef4044d898f8d6219431f18b);
+            
+
+            marker_29d367b1a15c4065a9b959d4cae73033.bindPopup(popup_a9e545f126aa4dc48a10971432ba5beb)
+            ;
+
+            
+        
+    
+        marker_29d367b1a15c4065a9b959d4cae73033.bindTooltip(
+            '<div>'
+            + 'Dragon House ' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_ba0bfaee37cb409e846fff61b83243c4 = L.marker(
+            [37.770192, -122.470173],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_c13d2757a9914de7bed26cb11d50da69);
+        
+    
+
+                var icon_acea597af2534e7dbf6c3a33a6d42163 = L.AwesomeMarkers.icon({
+                    icon: 'circle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_ba0bfaee37cb409e846fff61b83243c4.setIcon(icon_acea597af2534e7dbf6c3a33a6d42163);
+            
+    
+            var popup_8d66918e5f5c49c695bb68852b01a8e9 = L.popup({maxWidth: '2650'
+            
+            });
+
+            
+                var i_frame_2149aeb535094429b7d64586f3a401f2 = $('<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Y2VudGVyPjxoMj5KYXBhbmVzZSBUZWEgR2FyZGVuIDwvaDI+CiAgICAgICAgICA8aDQ+UmVsaWNzIG9mIHRoZSAxODk0IE1pZHdpbnRlciBFeHBvc2l0aW9uIGNvbnRpbnVlIHRvIGRlbGlnaHQgdmlzaXRvcnMgdG9kYXkuPC9oND4KICAgICAgICAgIDxpbWcgc3JjPSJodHRwczovL2Fzc2V0cy5hdGxhc29ic2N1cmEuY29tL21lZGlhL1cxc2laaUlzSW5Wd2JHOWhaSE12Y0d4aFkyVmZhVzFoWjJWekx6WmlNV0psT0dJNVpEUmhNek0xWVRRNVpHUmhaR1F6TlRkaU5URm1OakppU1UxSFh6VXdNREl1U2xCSElsMHNXeUp3SWl3aWRHaDFiV0lpTENJeE1qQXdlRDRpWFN4YkluQWlMQ0pqYjI1MlpYSjBJaXdpTFhGMVlXeHBkSGtnT0RFZ0xXRjFkRzh0YjNKcFpXNTBJbDFkL0lNR181MDAyLkpQRyIgY2xhc3M9ImNlbnRlciIgaGVpZ2h0PSIyMDAiPgogICAgICAgICAgPGJyPmtleXdvcmRzOiBnYXJkZW5zLCBqYXBhbmVzZSBnYXJkZW5zLCBib3RhbmljYWwgZ2FyZGVucywgZXh0cmFvcmRpbmFyeSBmbG9yYSwgaG9ydGljdWx0dXJhbCBtYXJ2ZWxzCiAgICAgICAgICA8YnI+T2RkaXR5IHNjb3JlOiAxMS43NSUKICAgICAgICAgIDwvY2VudGVyPg==" width="300" style="border:none !important;" height="300"></iframe>')[0];
+                popup_8d66918e5f5c49c695bb68852b01a8e9.setContent(i_frame_2149aeb535094429b7d64586f3a401f2);
+            
+
+            marker_ba0bfaee37cb409e846fff61b83243c4.bindPopup(popup_8d66918e5f5c49c695bb68852b01a8e9)
+            ;
+
+            
+        
+    
+        marker_ba0bfaee37cb409e846fff61b83243c4.bindTooltip(
+            '<div>'
+            + 'Japanese Tea Garden ' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_18359f57c51e42b3b4b23687e21ebea7 = L.marker(
+            [34.148874, -118.283976],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_c13d2757a9914de7bed26cb11d50da69);
+        
+    
+
+                var icon_ac2cfc0dfbb84c7cad2ff00c9d9a2e50 = L.AwesomeMarkers.icon({
+                    icon: 'circle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_18359f57c51e42b3b4b23687e21ebea7.setIcon(icon_ac2cfc0dfbb84c7cad2ff00c9d9a2e50);
+            
+    
+            var popup_f8d92255ca994073a7601c8cc0a79073 = L.popup({maxWidth: '2650'
+            
+            });
+
+            
+                var i_frame_0c5067cba4d14548bf505d6c44150463 = $('<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Y2VudGVyPjxoMj5Mb3MgQW5nZWxlcyBab28gQm90YW5pY2FsIEdhcmRlbnM8L2gyPgogICAgICAgICAgPGg0PlRoZSBMLkEuIFpvbyBoYXMgYSBzZWNyZXQgZ2FyZGVuIG9mIHJhcmUgYm9vdGxlZyBjeWNhZHMsIGEgcGFsbSBzcGVjaW1lbiBkYXRpbmcgYmFjayAyODAgbWlsbGlvbiB5ZWFycy48L2g0PgogICAgICAgICAgPGltZyBzcmM9Imh0dHBzOi8vYXNzZXRzLmF0bGFzb2JzY3VyYS5jb20vbWVkaWEvVzFzaVppSXNJblZ3Ykc5aFpITXZjR3hoWTJWZmFXMWhaMlZ6THpabU16SmhNRGhrWldWbU5UVm1abUU0TlRneU5ERTJNREZoWm1JMlpUVXhZVGs1WkRSbE1tUXVhbkJuSWwwc1d5SndJaXdpZEdoMWJXSWlMQ0l4TWpBd2VENGlYU3hiSW5BaUxDSmpiMjUyWlhKMElpd2lMWEYxWVd4cGRIa2dPREVnTFdGMWRHOHRiM0pwWlc1MElsMWQvNmYzMmEwOGRlZWY1NWZmYTg1ODI0MTYwMWFmYjZlNTFhOTlkNGUyZC5qcGciIGNsYXNzPSJjZW50ZXIiIGhlaWdodD0iMjAwIj4KICAgICAgICAgIDxicj5rZXl3b3Jkczogem9vcywgZXh0cmFvcmRpbmFyeSBmbG9yYSwgbmF0dXJhbCB3b25kZXJzLCBuYXR1cmFsIGhpc3RvcnksIGN5Y2FkcwogICAgICAgICAgPGJyPk9kZGl0eSBzY29yZTogOTAuMzYlCiAgICAgICAgICA8L2NlbnRlcj4=" width="300" style="border:none !important;" height="300"></iframe>')[0];
+                popup_f8d92255ca994073a7601c8cc0a79073.setContent(i_frame_0c5067cba4d14548bf505d6c44150463);
+            
+
+            marker_18359f57c51e42b3b4b23687e21ebea7.bindPopup(popup_f8d92255ca994073a7601c8cc0a79073)
+            ;
+
+            
+        
+    
+        marker_18359f57c51e42b3b4b23687e21ebea7.bindTooltip(
+            '<div>'
+            + 'Los Angeles Zoo Botanical Gardens' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_9ea022cffadc4a699597416f986b47ba = L.marker(
+            [44.205787, -121.263579],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_c13d2757a9914de7bed26cb11d50da69);
+        
+    
+
+                var icon_6239479baffc405eb29c1eb781384ae3 = L.AwesomeMarkers.icon({
+                    icon: 'circle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_9ea022cffadc4a699597416f986b47ba.setIcon(icon_6239479baffc405eb29c1eb781384ae3);
+            
+    
+            var popup_b9390f14a3914805a354ef2ff81bd80c = L.popup({maxWidth: '2650'
+            
+            });
+
+            
+                var i_frame_6d74519e32a447b3b676ff458cc22890 = $('<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8Y2VudGVyPjxoMj5QZXRlcnNlbiBSb2NrIEdhcmRlbjwvaDI+CiAgICAgICAgICA8aDQ+QnJpZGdlcywgdGVycmFjZXMsIGFuZCByZXBsaWNhcyBvZiBoaXN0b3JpYyBzdHJ1Y3R1cmVzIGFsbCBidWlsdCBvZiByb2NrIGFuZCBwZXRyaWZpZWQgd29vZCBieSBvbmUgbWFuLjwvaDQ+CiAgICAgICAgICA8aW1nIHNyYz0iaHR0cHM6Ly9hc3NldHMuYXRsYXNvYnNjdXJhLmNvbS9tZWRpYS9XMXNpWmlJc0luVndiRzloWkhNdmNHeGhZMlZmYVcxaFoyVnpMMFJUUTE4d01UazJMa3BRUnlKZExGc2ljQ0lzSW5Sb2RXMWlJaXdpTVRJd01IZy1JbDBzV3lKd0lpd2lZMjl1ZG1WeWRDSXNJaTF4ZFdGc2FYUjVJRGd4SUMxaGRYUnZMVzl5YVdWdWRDSmRYUS9EU0NfMDE5Ni5KUEciIGNsYXNzPSJjZW50ZXIiIGhlaWdodD0iMjAwIj4KICAgICAgICAgIDxicj5rZXl3b3JkczogYXJjaGl0ZWN0dXJhbCBvZGRpdGllcwogICAgICAgICAgPGJyPk9kZGl0eSBzY29yZTogNDAuNDQlCiAgICAgICAgICA8L2NlbnRlcj4=" width="300" style="border:none !important;" height="300"></iframe>')[0];
+                popup_b9390f14a3914805a354ef2ff81bd80c.setContent(i_frame_6d74519e32a447b3b676ff458cc22890);
+            
+
+            marker_9ea022cffadc4a699597416f986b47ba.bindPopup(popup_b9390f14a3914805a354ef2ff81bd80c)
+            ;
+
+            
+        
+    
+        marker_9ea022cffadc4a699597416f986b47ba.bindTooltip(
+            '<div>'
+            + 'Petersen Rock Garden' + '</div>',
+            {"sticky": true}
+        );
+        
+</script>
