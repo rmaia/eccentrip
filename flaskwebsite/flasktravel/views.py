@@ -23,11 +23,10 @@ def output():
     gmaps = googlemaps.Client(key='AIzaSyBpCaGULnnv0gEuruNiNiKcoDB5fhPVDF4')
 
     # Load data and model
-    with open('flasktravel/data/AOmasterdata-nodup-week4', 'rb') as infile:
+    with open('flasktravel/data/AOmasterdata-nodup-week4-clean', 'rb') as infile:
          aotable = pickle.load(infile)
-    with open('flasktravel/data/taggeddocs-week4', 'rb') as infile:
-         allao = pickle.load(infile)
-    model = Doc2Vec.load('flasktravel/data/model-week3')
+
+    model = Doc2Vec.load('flasktravel/data/model-week4-clean')
 
     # pull input data
     usr_select = request.form.get('usrtext')
@@ -35,10 +34,14 @@ def output():
     filt_loc = request.form.get('usrloc')
     usertok = auxfxns.usertokens(usr_select)
 
+    if filt_dist is None:
+      filt_dist = ''
+    if filt_loc is None:
+      filt_loc = ''
 
     # calculate vectors
-    tm_infervec = model.infer_vector(usertok, steps=200, alpha=0.05)
-    tm_mostsim = model.docvecs.most_similar([tm_infervec], topn=model.docvecs.count)
+    tm_infervec = model.infer_vector(usertok, steps=200, alpha=0.025, min_alpha=0.001)
+    tm_mostsim = model.docvecs.most_similar(positive=[tm_infervec], topn=model.docvecs.count)
 
     # merge data
     tm_table = pd.DataFrame(tm_mostsim)
@@ -52,7 +55,7 @@ def output():
     # create tags for good, intermediate and bad recommendations
     tm_distinfo['category'] = pd.cut(
         tm_distinfo['cosine'],
-        [-np.inf, tm_distinfo['cosine'].quantile(0.25),
+        [-np.inf, tm_distinfo['cosine'].quantile(0.50),
         tm_distinfo['cosine'].quantile(0.99), np.inf],
         labels=['bad', 'meh', 'good']
     )
