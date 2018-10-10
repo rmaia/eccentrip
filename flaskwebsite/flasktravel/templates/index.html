@@ -28,11 +28,24 @@
         <button type="submit" class="btn btn-large waves-effect waves-light teal"><i class="material-icons md-24 right">public</i>Let's go!</button>
         </div>
       </form>
+
+      <br>
+
       <div class='row center'>
       <form action="output" method="POST">
-        <button type="submit" name = "usrtext" value="gardens with statues" class="btn btn-large waves-effect waves-light teal">Example: search "gardens with statues"</button>
-      <br><br><br>
-      <a href="slides" target='blank' class="waves-effect waves-light btn-small deep-purple">Presentation slides</a>
+        <button type="submit" name = "usrtext" value="gardens with statues" class="waves-effect waves-light btn-small deep-purple">Example: search "gardens with statues"</button>
+      </form>
+
+      <br>
+
+      <form action="output" method="POST">
+        <input type="hidden" name="usrloc" value="San Francisco, CA">
+        <input type="hidden" name="usrdist" type="number" value="200">
+        <button type="submit" name = "usrtext" value="natural formations" class="waves-effect waves-light btn-small deep-purple">Example: search "natural formations" within 200 miles from San Francisco</button>
+      </form>
+
+      <br>
+
       <!--
       <br><br>
       <a href="http://www.atlasobscura.com" target='blank' class="waves-effect waves-light btn-small deep-purple">About Atlas Obscura</a>
