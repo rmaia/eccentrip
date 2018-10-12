@@ -62,9 +62,9 @@ def generatemap(dframe):
 
           html = '<center><h2>'+ row['title'] +  '''</h2>
           <h4>''' + row['subtitle'] + '''</h4>
+          OddScore: ''' + str(round(row['weirdpct'],2)) + '''% <br>
           <img src="''' + row['imgurl'] + '''" class="center" height="200">
-          <br>keywords: ''' + row['keywords'] +'''
-          <br>Oddity score: ''' + str(row['weirdpct']) + '''%
+          <br>tags: ''' + row['keywords'] +'''
           </center>'''
 
           iframe = folium.IFrame(html=html, width=300, height=300)
