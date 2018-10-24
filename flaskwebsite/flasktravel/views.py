@@ -20,7 +20,7 @@ def view_method():
 
 def output():
 
-    gmaps = googlemaps.Client(key='AIzaSyBpCaGULnnv0gEuruNiNiKcoDB5fhPVDF4')
+    gmaps = googlemaps.Client(key='') # enter your key
 
     # Load data and model
     with open('flasktravel/data/AOmasterdata-nodup-week4-clean', 'rb') as infile:
